@@ -1,0 +1,8 @@
+f = open("regex_sum.txt", "r")
+print(f.readline())
+print(f.readline())
+print(f.readline())
+print(f.readline())
+print(f.readline())
+print(f.readline())
+f.close()

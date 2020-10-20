@@ -1,0 +1,33 @@
+{
+    "sqltools.connections": [
+        {
+            "connectionTimeout": 60,
+            "database": "student",
+            "driver": "MySQL",
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "name": "MySQL",
+            "password": "root",
+            "port": 3306,
+            "previewLimit": 50,
+            "server": "localhost",
+            "username": "root@localhost"
+        }
+    ],
+    "python.pythonPath": "C:\\Users\\EXPERT COMPUTERS\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe",
+    "python.testing.pytestArgs": [
+        "1-Dictionaries"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./7-Files",
+        "-p",
+        "*test.py"
+    ],
+    "python.testing.promptToConfigure": false
+}

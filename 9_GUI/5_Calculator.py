@@ -24,7 +24,7 @@ def Eql():
 
 
 root = Tk()
-root.geometry("250x400+600+100")
+root.geometry("250x400+700+100")
 root.resizable(0, 0)
 root.title("Calculator")
 
@@ -38,8 +38,8 @@ lb1 = Label(
     text = "Label", 
     anchor = SE,  
     font = ("verdana", 20), 
-    bg = "grey", 
-    fg = "#ffffff",
+    bg="light sky blue", 
+    fg = "#000000",
     textvariable = txtinput,
 )
 lb1.pack(expand=True, fill="both", )
@@ -47,10 +47,10 @@ lb1.pack(expand=True, fill="both", )
 """
 txt = Entry(
     root, 
-    font=('arial', 20, "bold"), 
+    font=('arial', 24), 
     textvariable=txtinput, 
     width=15, 
-    bg="light grey", 
+    bg="sky blue", 
     justify='right'
 )
 txt.pack(expand=True, fill="both", )
@@ -62,16 +62,16 @@ txt.pack(expand=True, fill="both", )
 br1 = Frame(root, bg="#000000")                 #Black = "#000000"
 br1.pack(expand = True, fill = "both",)
 
-b1 = Button(br1, text="1", font=("verdana", 22),  border=0, command=lambda:Clk(1))
+b1 = Button(br1, text="1", font=("verdana", 22),  border=0, bg="deep sky blue", command=lambda:Clk(1))
 b1.pack(side=LEFT, expand=True, fill="both")
 
-b2 = Button(br1, text="2", font=("verdana", 22),  border=0, command=lambda:Clk(2))
+b2 = Button(br1, text="2", font=("verdana", 22),  border=0, bg="deep sky blue", command=lambda:Clk(2))
 b2.pack(side=LEFT, expand=True, fill="both")
 
-b3 = Button(br1, text="3", font=("verdana", 22),  border=0, command=lambda:Clk(3))
+b3 = Button(br1, text="3", font=("verdana", 22),  border=0, bg="deep sky blue", command=lambda:Clk(3))
 b3.pack(side=LEFT, expand=True, fill="both")
 
-bplus = Button(br1, text="+", font=("verdana", 22), border=0, command=lambda:Clk('+'))
+bplus = Button(br1, text="+", font=("verdana", 22), border=0, bg="deep sky blue", command=lambda:Clk('+'))
 bplus.pack(side=LEFT, expand=True, fill="both")
 
 #==================================================================
@@ -80,16 +80,16 @@ bplus.pack(side=LEFT, expand=True, fill="both")
 br2 = Frame(root)                 
 br2.pack(expand = True, fill = "both",)
 
-b4 = Button(br2, text="4", font=("verdana", 22),  border=0, command=lambda:Clk(4))
+b4 = Button(br2, text="4", font=("verdana", 22),  border=0, bg="deep sky blue", command=lambda:Clk(4))
 b4.pack(side=LEFT, expand=True, fill="both")
 
-b5 = Button(br2, text="5", font=("verdana", 22),  border=0, command=lambda:Clk(5))
+b5 = Button(br2, text="5", font=("verdana", 22),  border=0, bg="deep sky blue", command=lambda:Clk(5))
 b5.pack(side=LEFT, expand=True, fill="both")
 
-b6 = Button(br2, text="6", font=("verdana", 22),  border=0, command=lambda:Clk(6))
+b6 = Button(br2, text="6", font=("verdana", 22),  border=0, bg="deep sky blue", command=lambda:Clk(6))
 b6.pack(side=LEFT, expand=True, fill="both")
 
-bminus = Button(br2, text="-", font=("verdana", 22),  border=0, command=lambda:Clk('-'))
+bminus = Button(br2, text="-", font=("verdana", 22),  border=0, bg="deep sky blue", command=lambda:Clk('-'))
 bminus.pack(side=LEFT, expand=True, fill="both")
 
 #==================================================================
@@ -98,16 +98,16 @@ bminus.pack(side=LEFT, expand=True, fill="both")
 br3 = Frame(root)                 
 br3.pack(expand = True, fill = "both",)
 
-b7 = Button(br3, text="7", font=("verdana", 22),  border=0, command=lambda:Clk(7))
+b7 = Button(br3, text="7", font=("verdana", 22),  border=0, bg="deep sky blue", command=lambda:Clk(7))
 b7.pack(side=LEFT, expand=True, fill="both")
 
-b8 = Button(br3, text="8", font=("verdana", 22),  border=0, command=lambda:Clk(8))
+b8 = Button(br3, text="8", font=("verdana", 22),  border=0, bg="deep sky blue", command=lambda:Clk(8))
 b8.pack(side=LEFT, expand=True, fill="both")
 
-b9 = Button(br3, text="9", font=("verdana", 22),  border=0, command=lambda:Clk(9))
+b9 = Button(br3, text="9", font=("verdana", 22),  border=0, bg="deep sky blue", command=lambda:Clk(9))
 b9.pack(side=LEFT, expand=True, fill="both")
 
-bmul = Button(br3, text="*", font=("verdana", 22),  border=0, command=lambda:Clk('*'))
+bmul = Button(br3, text="*", font=("verdana", 22),  border=0, bg="deep sky blue", command=lambda:Clk('*'))
 bmul.pack(side=LEFT, expand=True, fill="both")
 
 #==================================================================
@@ -116,16 +116,16 @@ bmul.pack(side=LEFT, expand=True, fill="both")
 br4 = Frame(root)                 
 br4.pack(expand = True, fill = "both",)
 
-clr = Button(br4, text="C", font=("verdana", 22),  border=0, command=lambda:Clr())
+clr = Button(br4, text="C", font=("verdana", 22),  border=0, bg="deep sky blue", command=lambda:Clr())
 clr.pack(side=LEFT, expand=True, fill="both")
 
-b0 = Button(br4, text="0", font=("verdana", 22),  border=0, command=lambda:Clk(0))
+b0 = Button(br4, text="0", font=("verdana", 22),  border=0, bg="deep sky blue", command=lambda:Clk(0))
 b0.pack(side=LEFT, expand=True, fill="both")
 
-beql = Button(br4, text="=", font=("verdana", 22),  border=0, command=lambda:Eql())
+beql = Button(br4, text="=", font=("verdana", 22),  border=0, bg="deep sky blue", command=lambda:Eql())
 beql.pack(side=LEFT, expand=True, fill="both")
 
-bdiv = Button(br4, text="/", font=("verdana", 22),  border=0, command=lambda:Clk('/'))
+bdiv = Button(br4, text="/", font=("verdana", 22),  border=0, bg="deep sky blue", command=lambda:Clk('/'))
 bdiv.pack(side=LEFT, expand=True, fill="both")
 
 #==================================================================
